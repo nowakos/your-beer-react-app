@@ -1,6 +1,19 @@
-.beer-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: flex-start;
+.show-beer {
+  max-width: 1100px;
+  margin: 0 auto;
 }
+  .beer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .notFound {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 800px;
+  }
+
+

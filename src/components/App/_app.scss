@@ -7,6 +7,51 @@
 
 .center {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   flex-direction: column;
+
+  .container {
+    //max-width: 1200px;
+    //margin: 0 auto;
+  }
+
+  .btn-move {
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+
+      width: 80px;
+      height: 40px;
+      background: #00afdb;
+      color: white;
+      border: black;
+      cursor: pointer;
+      margin: 10px 0 10px 0;
+
+
+    }
+
+  }
+
 }
+
+.next span:hover {
+  font-size: 18px;
+}
+
+.back span:hover {
+  font-size: 18px;
+}
+
+.loader {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  letter-spacing: 1px;
+  color: #00afdb;
+}
+

@@ -1,7 +1,6 @@
 import React from 'react';
 import "./_searchBar.scss"
 import PropTypes from "prop-types";
-// import { Search } from "react-feather";
 
 
 class SearchBar extends React.Component {
@@ -40,6 +39,7 @@ class SearchBar extends React.Component {
                         className="form-control"
                         type="text"
                         name="textFilter"
+                        placeholder='Write name of beer'
                         value={this.state.textFilter}
                         onChange={this.changeHandler}
                         onKeyPress={event => {
@@ -48,40 +48,14 @@ class SearchBar extends React.Component {
                             }
                         }}
                     />
-                    <button className="btn btn-primary" onClick={this.searchBeer}>
-                       Szukaj
+                    <button className="btn search" onClick={this.searchBeer}>
+                        <span>Search</span>
                     </button>
                 </div>
             </section>
         );
     }
 }
-
-
-
-
-
-
-// const SearchBar = ({beer}) => (
-//
-//     <section className="search-bar">
-//         <div className="search-bar__text">
-//             <input
-//                 className="form-control"
-//                 type="text"
-//                 name="textFilter"
-//                 value=''
-//
-//             />
-//             <button className="btn btn-primary" >
-//                 Szukaj
-//             </button>
-//         </div>
-//     </section>
-//
-// );
-
-
 
 
 export default SearchBar;

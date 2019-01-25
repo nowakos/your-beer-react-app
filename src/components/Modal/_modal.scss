@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position: fixed;
+  background: white;
+  color: black;
+  width: 300px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 10px 20px 10px;
+}
+
+h3 {
+  padding: 10px 10px 10px 10px;
+}
+
+p {
+  padding: 5px 10px 5px 10px;
+}
+
+.btn-more {
+  border: white;
+  background: white;
+  cursor: pointer;
+}
+
+.btn-more:hover {
+  background: #00afdb;
+}
+
+.btn-close {
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  background: #00afdb;
+  border: white;
+  color: white;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+

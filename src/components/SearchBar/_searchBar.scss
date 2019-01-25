@@ -3,22 +3,33 @@
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
+
   &__text {
     display: flex;
-    width: 100%;
-    max-width: 640px;
+    width: 640px;
+
     .form-control {
       width: calc(100% - 50px);
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
 
     }
+
+    .form-control:focus {
+      outline: #00afdb solid 2px;
+    }
+
     .btn {
       width: 100px;
       height: 50px;
       background: #00afdb;
       color: white;
       border: black;
+      cursor: pointer;
+    }
+
+    .search span:hover {
+      font-size: 18px;
     }
   }
 }
