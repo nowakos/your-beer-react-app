@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is simply app for displaying beers form Pank API.
 
 Features:
-filtering by text
+filtering by text <br>
 RWD
 
 TechStack:
-React
+React <br>
 SASS
 
 ## Available Scripts
