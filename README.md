@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About
-This is simply app for displaying beers form Pank API.
+This is simply app for displaying beers from Pank API.
 
 Features:<br>
 - filtering by text <br>
@@ -10,7 +10,7 @@ Features:<br>
 TechStack:<br>
 - React <br>
 - SASS <br>
-You can see result at https://nowakos.github.io/your-beer-react-app/src/
+You can see result at https://nowakos.github.io/your-beer-react-app/
 
 ## Available Scripts
 
