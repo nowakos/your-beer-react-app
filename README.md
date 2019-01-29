@@ -10,7 +10,7 @@ Features:<br>
 TechStack:<br>
 - React <br>
 - SASS <br>
-You can see result at https://nowakos.github.io/your-beer-react-app/
+
 
 ## Available Scripts
 
