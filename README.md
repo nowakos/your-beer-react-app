@@ -1,4 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+About
+This is simply app for displaying beers form Pank API.
+
+Features:
+filtering by text
+RWD
+
+TechStack:
+React
+SASS
 
 ## Available Scripts
 
