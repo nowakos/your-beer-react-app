@@ -8,6 +8,7 @@ const SingleBeer = ({beer}) => (
         <div className='single-beer-name'>{beer.name}</div>
         <div className="single-beer-desc">
             {beer.description.substr(0, 150)}...<br/>
+
         </div>
         <Modal dsc={beer.description} food={beer.food_pairing} tips={beer.brewers_tips}/>
         <div className="single-beer-brew-sheet">

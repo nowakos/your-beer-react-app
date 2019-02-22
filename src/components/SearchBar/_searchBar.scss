@@ -3,7 +3,8 @@
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
-
+  height: 40px;
+  font-size: 22px;
   &__text {
     display: flex;
     width: 640px;
@@ -12,24 +13,13 @@
       width: calc(100% - 50px);
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-
+      font-size: 22px;
     }
 
     .form-control:focus {
       outline: #00afdb solid 2px;
+      font-size: 22px;
     }
 
-    .btn {
-      width: 100px;
-      height: 50px;
-      background: #00afdb;
-      color: white;
-      border: black;
-      cursor: pointer;
-    }
-
-    .search span:hover {
-      font-size: 18px;
-    }
   }
 }

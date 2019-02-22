@@ -1,36 +1,9 @@
 import React from 'react';
 import "./_searchBar.scss"
-import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { searchBeers } from '../../actions'
 
-
-class SearchBar extends React.Component {
-    static propTypes = {
-        onSearch: PropTypes.func
-    };
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            textFilter: ""
-        };
-    }
-
-    componentDidUpdate(prevProps, prevState) {
-        if (prevState.textFilter.length > 0 && this.state.textFilter.length === 0) {
-            this.searchBeer();
-        }
-    }
-
-    changeHandler = event => {
-        this.setState({
-            [event.target.name]: event.target.value
-        });
-    };
-
-    searchBeer = () => {
-        this.props.onSearch(this.state.textFilter);
-    };
-
+class BeersFilter extends React.Component {
     render() {
         return (
             <section className="search-bar">
@@ -38,25 +11,36 @@ class SearchBar extends React.Component {
                     <input
                         className="form-control"
                         type="text"
-                        name="textFilter"
-                        placeholder='Write name of beer'
-                        value={this.state.textFilter}
-                        onChange={this.changeHandler}
-                        onKeyPress={event => {
-                            if (event.key === "Enter") {
-                                this.searchBeer();
-                            }
-                        }}
+                        placeholder="Write name of beer"
+                        value={this.props.beersSearch}
+                        onChange={this.handleSearchChange}
                     />
-                    <button className="btn search" onClick={this.searchBeer}>
-                        <span>Search</span>
-                    </button>
+                    <i className="search icon"/>
                 </div>
             </section>
         );
     }
+
+    handleSearchChange = e => {
+        this.props.searchBeers(e.currentTarget.value)
+    };
+
 }
 
 
-export default SearchBar;
+const mapStateToProps = state => {
+    return {
+        beersSearch: state.beersSearch
+    };
+};
+
+const mapDispatchToProps = { searchBeers };
+
+export const BeersFilterContainer = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(BeersFilter);
+
+
+
 

@@ -34,7 +34,7 @@ class Modal extends Component {
                     <p>{this.props.dsc}</p>
                     <h3>Food pairing:</h3>
                     <ul>
-                        {this.props.food.map((elem) => <li>{elem}</li>)}
+                        {this.props.food.map((elem , idx) => <li key={idx}>{elem}</li>)}
                     </ul>
                     <h3>Brewers tips:</h3>
                     <p>{this.props.tips}</p>
